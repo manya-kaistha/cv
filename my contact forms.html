@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>contact details</title>
+</head>
+<!-- below is a form cretion method 
+you can use different input types, be sure to refer to mdn for all the various types-->
+
+<body>
+    <p>my fictional adress</p>
+    <p>000000000</p>
+    <p>myemail@email.com</p>
+
+    <hr>
+    <!--the mailto action sends the default mail client and aadds all teh below text to the mail
+    we use enctype to specify that we need only plain text-->
+    <form action="mailto:nabhyakaistha@gamil.com" method="post" enctype="text/plain">
+        <label>your name</label>
+        <input type="text" name="yourname">
+        <br>
+        <label>your email</label>
+        <input type="email" name="youremail">
+        <!--the text area had the area where you can give the user to write the message-->
+        <br>
+        <label>your message</label>
+        <textarea name="yourmessage" cols="30" rows="10">type your message here</textarea>
+        <br>
+        <input type="submit">
+        <br>
+    </form>
+</body>
+
+</html>
